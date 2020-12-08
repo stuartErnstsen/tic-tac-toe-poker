@@ -32,6 +32,7 @@ let play = (boxNum) => {
                 return win;
             }
             return win = arr.reduce((comboWin, num, index) => {
+                // If comboWIn is false and the current index is not the first element the win check has failed an will return false for the rest of the array
                 if (!comboWin && index > 0) {
                     return false;
                 }
