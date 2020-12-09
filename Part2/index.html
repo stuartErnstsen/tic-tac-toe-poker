@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Styles</title>
-    <link rel="stylesheet" href="./index.css" />
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Styles</title>
+  <link rel="stylesheet" href="./index.css" />
+</head>
+
 <body>
-  <header><h1>Poker Cards</h1></header>
-    <main>
-        <section><span>A</span><span>♦</span><span>A</span></section>
-        <section><span>A</span><span>♣</span><span>A</span></section>
-        <section><span>A</span><span>♥</span><span>A</span></section>
-        <section><span>A</span><span>♠</span><span>A</span></section>
-    </main>
+  <header>
+    <h1>Poker Cards</h1>
+  </header>
+  <main>
+    <section id="diamonds" class="card0 resetCard"><span class="cardType0 resetCardType">A</span><span id="cardSuit0"
+        class="resetCardSuit">♦</span><span class="cardType0 resetCardType">A</span></section>
+    <section id="clubs" class="card1 resetCard"><span class="cardType1 resetCardType">A</span><span id="cardSuit1"
+        class="resetCardSuit">♣</span><span class="cardType1 resetCardType">A</span></section>
+    <section id="hearts" class="card2 resetCard"><span class="cardType2 resetCardType">A</span><span id="cardSuit2"
+        class="resetCardSuit">♥</span><span class="cardType2 resetCardType">A</span></section>
+    <section id="spades" class="card3 resetCard"><span class="cardType3 resetCardType">A</span><span id="cardSuit3"
+        class="resetCardSuit">♠</span><span class="cardType3 resetCardType">A</span></section>
+  </main>
+  <input type="text" name="grabId" id="idInput" placeholder='Set ID'>
+  <input type="text" name="cardStyle" id="colorInput" placeholder='Set Color'>
+  <button id="btn" onclick="setCard()">NEW CARD</button>
+  <button id="newHandBtn" onclick="setHand()">NEW HAND</button>
+  <button id="resetButton" onclick="resetGame()">RESET DECK</button>
+  <script src="poker.js"></script>
 </body>
+
 </html>
