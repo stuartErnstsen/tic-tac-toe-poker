@@ -36,10 +36,9 @@ const setHand = () => {
         while (!checkCard(card) || card.default) {
             card.suitType = randomSuit();
             card.cardType = randomCard();
+            //Change value for default card to false to indicate new card has been dealt;
             card.default = false;
         };
-        //Change value for default card to false to indicate new card has been dealt;
-
         //Loop through default deck suit properties to get color/icon that matches with suit type. 
         deck.forEach(suit => {
             if (suit.suitType === card.suitType) {
