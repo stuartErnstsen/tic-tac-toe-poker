@@ -7,8 +7,8 @@ const deck = [{ suitType: "diamonds", suitIcon: '♦', suitDeck: [], color: 'red
 { suitType: "clubs", suitIcon: '♣', suitDeck: [], color: 'black' }];
 //Default hand array of Card objects for reset; 
 const defaultHand = [{ suitType: "diamonds", suitIcon: '♦', cardType: 'A', color: 'grey', default: true },
-{ suitType: "hearts", suitIcon: '♥', cardType: 'A', color: 'grey', default: true },
 { suitType: "spades", suitIcon: '♠', cardType: 'A', color: 'grey', default: true },
+{ suitType: "hearts", suitIcon: '♥', cardType: 'A', color: 'grey', default: true },
 { suitType: "clubs", suitIcon: '♣', cardType: 'A', color: 'grey', default: true }];
 const deckCardTypes = ['A', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K'];
 const deckCardLength = 13;
